@@ -8,6 +8,7 @@ def home():
 
 @app.route('/calculator')
 def calculator():
+<<<<<<< HEAD
     result = None
     if request.method == 'POST':
         try:
@@ -17,6 +18,9 @@ def calculator():
         except ValueError:
             result = "Invalid input. Please enter numbers only."
     return render_template('calculator.html', result=result)
+=======
+    return render_template('calculator.html')
+>>>>>>> origin/incorrect_branch_name
 
 if __name__ == '__main__':
     app.run(debug=True)
